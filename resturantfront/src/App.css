@@ -1,0 +1,420 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 90%;
+}
+/* From Uiverse.io by akshat-patel28 */ 
+.button-container {
+  display: flex;
+  background-color: rgb(30, 29, 29);
+  width: 98%;
+  
+  height: 70px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 50px;
+  border: 1px solid rgb(54, 54, 11);
+}
+
+.navbutton {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.navbutton:hover {
+  transform: translateY(-3px);
+  color: yellow;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.adtocart{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+ font-family: inherit;
+ font-size: 13px;
+ font-weight: 500;
+ text-transform: uppercase;
+ letter-spacing: 0.4px;
+ color: #f2f2f6;
+ background-color: #055812;
+ border-style: solid;
+ border-width: 2px 2px 2px 2px;
+ border-color: rgba(255, 255, 255, 0.333);
+ border-radius: 40px 40px 40px 40px;
+ padding: 5px 15px 10px 28px;
+ transform: translate(0px, 0px) rotate(0deg);
+ transition: 0.2s;
+}
+
+/* From Uiverse.io by Yaseen549 */ 
+/* Product card container */
+.product-container {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Individual product card */
+.pcard {
+  width: 190px;
+  height: 280px; /* slightly taller to fit all content */
+  border-radius: 20px;
+  background: #212121;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25),
+              -15px -15px 30px rgb(60, 60, 60);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid rgb(11, 11, 11);
+}
+
+/* Product image */
+.product-image {
+  width: 80%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+/* Product name */
+.product-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 5px 0;
+  white-space: nowrap;       /* keep in one line */
+  overflow: hidden;
+  text-overflow: ellipsis;   /* add ... if too long */
+  width: 100%;
+  text-align: center;
+}
+
+/* Product details container */
+.product-detail {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Product price */
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 2px 0;
+}
+
+/* Product description - multi-line ellipsis */
+.product-desp {
+  font-size: 12px;
+  color: #ccc;
+  text-align: center;
+  display: -webkit-box; /* max 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 2px 0;
+}
+
+/* Product category */
+.product-cat {
+  font-size: 12px;
+  color: #999;
+  margin-top: auto;
+}
+
+.cartheader{
+  background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+ url("https://th.bing.com/th/id/OIP.XIU0-cFiCkLQ9t2yKQYcOAHaE7?w=255&h=180&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3");
+  height: 200px;
+  text-align: center;
+  font-size:100px;
+  border-radius: 20px;
+
+}
+.cart{
+     margin-top: 5px;
+    background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+}
+
+
+/* AddProduct Form Container */
+.max-w-lg {
+  max-width: 33rem; /* 512px */
+  margin-top: 3rem; /* 12 */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #393838;
+  padding: 2rem; /* 32px */
+  border-radius: 1rem; /* 16px */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Header */
+.max-w-lg h2 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem; /* 24px */
+  color: #16a34a; /* Tailwind green-600 */
+}
+
+/* Form Inputs */
+.inputfileds {
+  width: 95%;
+  padding: 0.75rem 1rem; /* 12px 16px */
+  border: 1px solid #d1d5db; /* Tailwind gray-300 */
+  border-radius: 0.5rem; /* 8px */
+  font-size: 1rem; /* 16px */
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.inputfileds:focus {
+  border-color: #6366f1; /* Tailwind indigo-500 */
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* Submit Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #16a34a; /* Tailwind green-600 */
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.5rem; /* 8px */
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #15803d; /* Tailwind green-700 */
+}
+
+/* Message Display */
+.max-w-lg p {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #ef4444; /* Tailwind red-500 for error */
+}
+
+/* Optional: spacing between input fields */
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+/* DeleteProduct Form Container */
+.max-w-md {
+  max-width: 28rem; /* 448px */
+  margin-top: 4rem; /* 16 */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  padding: 2rem; /* 32px */
+  border-radius: 1rem; /* 16px */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Header */
+.max-w-md h2 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem; /* 24px */
+  color: #dc2626; /* Tailwind red-600 */
+}
+
+/* Input Field */
+.max-w-md input[type="text"] {
+  width: 100%;
+  padding: 0.75rem 1rem; /* 12px 16px */
+  border: 1px solid #d1d5db; /* Tailwind gray-300 */
+  border-radius: 0.5rem; /* 8px */
+  font-size: 1rem; /* 16px */
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  margin-bottom: 1rem; /* spacing between input and button */
+}
+
+.max-w-md input[type="text"]:focus {
+  border-color: #f87171; /* Tailwind red-400 */
+  box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.2);
+}
+
+/* Delete Button */
+.max-w-md button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #dc2626; /* Tailwind red-600 */
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.5rem; /* 8px */
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.max-w-md button:hover {
+  background-color: #b91c1c; /* Tailwind red-700 */
+}
+
+/* Message Display */
+.max-w-md p {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #dc2626; /* Tailwind red-600 */
+}
+.cart-container {
+  width: 100%;
+  padding: 10px;
+  border-radius: 1rem;
+  background: var(--background);
+  display: flex;
+  flex-wrap: wrap; /* allow items to wrap to next row */
+  gap: 15px;
+  justify-content: center; /* center items */
+  max-height: 500px;
+  overflow-y: auto;
+  
+}
+.cart-item {
+  background: #fff;
+  border-radius: 10px;
+  width: 150px; /* adjust card width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  overflow: hidden; /* prevent image or text overflow */
+}
+
+.cart-image {
+  width: 100%;
+  height: 120px; /* fixed image height */
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #000;
+}
+
+.cart-details {
+  text-align: center;
+  margin-top: 8px;
+  width: 100%;
+  flex: 1; /* take remaining space to display text */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+}
+
+.cart-details h3 {
+  margin: 5px 0;
+  color: black;
+  font-size: 14px;
+  line-height: 1.2;
+  word-wrap: break-word; /* wrap long names */
+  overflow-wrap: break-word;
+}
+
+.cart-details p {
+  margin: 2px 0;
+  font-size: 13px;
+}
+
+.cart-details button {
+  margin-top: 8px;
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff4d4f;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cart-details button:hover {
+  background-color: #e03e3f;
+}
+
+
+
+/* From Uiverse.io by kosedagyazilim */ 
+.gen {
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-image: linear-gradient(to bottom right, #3e8599, #0454b5);
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0px 4px 0px #0072ff;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.gen:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 0px #0072ff;
+}
+
+.gen:active {
+  transform: translateY(0px);
+  box-shadow: none;
+  background-image: linear-gradient(to bottom right, #0072ff, #00c6ff);
+}
+
+.gen:before,
+.gen:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.gen:before {
+  top: -3px;
+  left: -3px;
+  border-radius: 40px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+}
+
+.gen:after {
+  bottom: -3px;
+  right: -3px;
+  border-radius: 40px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+}

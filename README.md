@@ -1,10 +1,10 @@
-# 🏨 Hotel/Restaurant Management System
+# Hotel/Restaurant Management System
 
 This is a full-stack web application for managing a hotel or restaurant menu. Users can view products (like food items), and admins can add, edit, or delete products. Cart functionality and local storage support are included for ordering purposes.
 
 ---
 
-## 🚀 Features
+## Features
 
 ### User Features
 - View all products with images, description, price, and category.
@@ -36,5 +36,6 @@ This is a full-stack web application for managing a hotel or restaurant menu. Us
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+https://github.com/Abhi0505-kinagi/MenuMaster_fullastack_website.git
+
+

@@ -30,7 +30,33 @@ This is a full-stack web application for managing a hotel or restaurant menu. Us
 - **HTTP Client:** Axios
 
 ---
-
+## Project Structure
+  root/
+├─ resturantbackend/ # Node.js + Express backend
+│ ├─ DB/ # MongoDB models
+│ │ ├─ bill.js # Bill schema and operations
+│ │ ├─ db.js # Main MongoDB connection
+│ │ └─ Product.js # Product schema and operations
+│ ├─ Admin/
+│ │ └─ Admin.js # Admin routes
+│ ├─ server.js # Backend server
+│ └─ .env # For storing private credentials
+├─ resturantfront/ # React frontend
+│ ├─ Components/
+│ │ ├─ Admin/ # Admin control components
+│ │ │ ├─ addProduct.jsx
+│ │ │ ├─ AdminDashboard.jsx
+│ │ │ ├─ AdminDashboard.css
+│ │ │ └─ DeleteProduct.jsx
+│ │ ├─ Header.jsx
+│ │ ├─ Cart.jsx
+│ │ ├─ Navigation.jsx
+│ │ ├─ Products.jsx
+│ │ └─ TitleCard.css
+│ ├─ App.jsx # Main React App
+│ ├─ index.jsx # React entry point
+│ └─ App.css # Global styles
+└─ README.md
 ## 💻 Installation
 
 1. **Clone the repository**
